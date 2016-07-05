@@ -45,21 +45,75 @@
     </div>
   </div>
 </div>
-
 <div class="container">
 
 
+<div class="well login-well">
 
-<div class="jumbotron">
-  <p class="jumbotron-subtitle">intygrate</p>
-<h1 class="jumbotron-title">LogReact</h1>
+  <div class="alert alert-dismissible alert-danger fade" id="login-error" style="display:none;">
+  <button type="button" class="close" id="error-close" data-dismiss="alert">×</button>
+  <strong>Warning!</strong>
+  <div id="error-message"></div>
+</div>
 
 
+<div class="modal " data-backdrop="static" data-keyboard="false">
+        <div class="modal-header">
+            <h1>Signing in....</h1>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
 
 
-<div class="login-button"><a href="login.html" class="btn btn-warning btn-lg">Login</a></div>
+    <div class="modal" id="signing-in-dialog" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Signing in...</h2>
+      </div>
+      <div class="modal-body">
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-warning" style="width: 100%;"></div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<form class="form-horizontal login-form" id="form-login" >
+  <fieldset>
+    <h1 align="center">Login</h1>
+    <div class="form-group ">
+      <label for="inputEmail" class="col-md-2 control-label">Email</label>
+
+      <div class="col-md-10">
+        <input type="email" class="form-control" id="input-email" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-md-2 control-label">Password</label>
+
+      <div class="col-md-10">
+        <input type="password" class="form-control" id="input-password" placeholder="Password">
+    <div class="form-group">
+      <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
+        <a href="index.html" type="button" class="btn btn-default">Cancel</a>
+        <button type="submit" class="btn btn-warning" id="buttonSubmit">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
 </div>
 
 </div>
+
   </body>
 </html>

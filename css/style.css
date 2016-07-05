@@ -1,0 +1,49 @@
+
+
+body{
+  background-image: url("../img/logreactBackground.jpg");
+  background-size: stretch;
+  background-color: #d88d3a;
+
+}
+.jumbotron{
+
+  opacity: 0.9;
+  background-color: #ff5722;
+}
+
+.jumbotron h1{
+
+  /*font-size: 17em;*/
+  background-color: #ffffff;
+  font-size:13.5vw;
+  font-weight: lighter;
+  text-align:center;
+  color:#ff5722;
+  text-shadow: -1px 0 #888, 0 1px #444, 1px 0 #888, 0 -1px #444;
+}
+
+.jumbotron p{
+  text-align:center;
+
+  font-size: 1vw;
+}
+
+.jumbotron .login-button{
+  margin:100px;
+  text-align: center;
+}
+
+.well{
+  opacity: 0.9;
+}
+
+.login-form{
+  padding: 60px 0 130px 0;
+}
+
+/*@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}*/

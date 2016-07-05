@@ -16,8 +16,8 @@ AWS.config.region = 'us-east-1'; // Region
  var attributeList = [];
 
  var dataEmail = {
-     Name : 'email',
-     Value : 'email@mydomain.com'
+     Name : 'praj',
+     Value : 'praj@mydomain.com'
  };
  var dataPhoneNumber = {
      Name : 'phone_number',
@@ -35,5 +35,7 @@ AWS.config.region = 'us-east-1'; // Region
          return;
      }
      cognitoUser = result.user;
+
+
      console.log('user name is ' + cognitoUser.getUsername());
  });
